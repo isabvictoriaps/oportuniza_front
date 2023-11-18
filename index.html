@@ -5,41 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oportuniza</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/Group 90 (1).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar fixed-top bg-body-tertiary"">
         <div>
             <img src="assets/logo.png" alt="logo - oportuniza">
         </div>
         <div class="links">
-            <a href="">
+            <a href="#section-1">
                 <p>home</p>
             </a>
-            <a href="">
+            <a href="#section-2">
                 <p>sobre nós</p>
             </a>
-            <a href="">
+            <a href="#secao-4">
                 <p>contato</p>
             </a>
         </div>
-        <div class="button_login">
+        <a href="pages/tela_login.html" class="button_login">
             <p>ENTRAR</p>
-        </div>
+        </a>
     </div>
-    <div class="section-1">
+    <div id="section-1">
         <div>
             <img src="assets/img_index.png" alt="">
         </div>
         <div class="text_sectio1">
             <img src="assets/Group 92.png" alt="">
             <p>Acreditamos no poder que a juventude tem!</p>
-            <div class="button_section">COMO FUNCIONA?</div>
+            <div class="button_secao">COMO FUNCIONA?</div>
         </div>
     </div>
-    <div class="section-2">
+    <div id="section-2">
         <img src="assets/Group 91.png" alt="">
     </div>
     <div class="section-3">
@@ -48,45 +49,45 @@
         </div>
         <div class="lista-conteudos-blog">
             <a href="">
-                <div class="conteudo">
-                    <p>mercado de <br> trabalho</p>
+                <div class="conteudo-blog">
+                    <p>mercado de trabalho</p>
                 </div>
             </a>
             <a href="">
-                <div class="conteudo">
-                    <p>dicas para <br> entrevista</p>
+                <div class="conteudo-blog">
+                    <p>dicas para entrevista</p>
                 </div>
             </a>
             <a href="">
-                <div class="conteudo">
-                    <p>inglês realmente <br> é importante?</p>
+                <div class="conteudo-blog">
+                    <p>inglês realmente é importante?</p>
                 </div>
             </a>
             <a href="">
-                <div class="conteudo">
-                    <p>dicas para <br> desenvolver</p>
+                <div class="conteudo-blog">
+                    <p>dicas para desenvolver</p>
                 </div>
             </a>
             <a href="">
-                <div class="conteudo">
-                    <p>livros para <br> desenvolver</p>
+                <div class="conteudo-blog">
+                    <p>livros para desenvolver</p>
                 </div>
             </a>
             <a href="">
-                <div class="conteudo">
+                <div class="conteudo-blog">
                     <p>o papel da mentoria no desenvolvimento pessoal</p>
                 </div>
             </a>
         </div>
     </div>
-    <div class="section-4">
-        <div class="sub-section-form">
-            <h2 class="title-forms">FORMULÁRIO</h2>
+    <div id="secao-4">
+        <div class="sub-section-formulario">
+            <h2 class="title-formulario">FORMULÁRIO</h2>
             <p>
                 Duvídas ou sugestões? <br>
                 Preencha o formulário que entraremos em contato
             </p>
-            <div class="inputs_forms">
+            <div class="inputs_formulario">
                 <div>
                     <p>Nome</p>
                     <input type="text" name="nome" id="input_nome">
@@ -97,7 +98,7 @@
                 </div>
                 <div>
                     <p>Mensagem</p>
-                    <input type="text" name="mensagem" id="input_message">
+                    <textarea type="text" name="mensagem" id="input_message"></textarea>
                 </div>
             </div>
             <div>
@@ -110,6 +111,8 @@
     <footer>
         <p>&copy Copyright - 2023</p>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

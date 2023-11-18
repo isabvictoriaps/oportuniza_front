@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Oportuniza</title>
-        <link rel="shortcut icon" href="/assets/ 90 (1).png" type="image/x-icon">
-        <link rel="stylesheet" href="/style.css">
-    </head>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportuniza</title>
+    <link rel="shortcut icon" href="../assets/Group 90 (1).png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
 <body>
     <div class="navbar">
         <div>
             <img src="/assets/logo.png" alt="logo - oportuniza">
         </div>
         <div class="links">
-            <a href="">
+            <a href="../index.html">
                 <p>home</p>
             </a>
             <a href="">
@@ -24,9 +27,9 @@
                 <p>contato</p>
             </a>
         </div>
-        <div class="button_login">
+        <a href="tela_login.html" class="button_login">
             <p>ENTRAR</p>
-        </div>
+        </a>
     </div>
     <div class="section-login">
         <div class="image-login">
@@ -34,22 +37,28 @@
         </div>
         <div class="text-login">
             <img src="/assets/Group 93.png" alt="">
-            <div class="input_login">
-                <input type="text" name="" id="email-login" placeholder="Nome completo">
-                <input type="email" name="" id="email-login" placeholder="Apelido">
-                <input type="email" name="" id="email-login" placeholder="E-mail">
-                <input type="password" name="" id="password-login" placeholder="Senha">
-            </div>
-            <a href="">
-                <div class="button-entrar-login">
-                    <p>ENTRAR</p>
-                </div>
-            </a>
-            <p>Já possui uma conta? <a href="" class="criar-conta-login">Faça o login agora mesmo!</a></p>
+            <form class="input_login" id="registration-form">
+                <input type="text" name="nome_completo" class="email-login" placeholder="Nome completo" required>
+                <input type="text" name="usuario" class="email-login" placeholder="Usuario" required>
+                <input type="email" name="email" class="email-login" placeholder="E-mail" required>
+                <input type="email" name="confirm_email" class="email-login" placeholder="Confirme seu e-mail" required>
+                <input type="password" name="senha" class="email-login" placeholder="Senha" required>
+                <input type="password" name="confirm_senha" class="email-login" placeholder="Confirme sua senha"
+                    required>
+                <button type="button" class="button-entrar-login" onclick="cadastrarUsuario()">CADASTRAR</button>
+                <div id="mensagem-de-erro-cadastro" style="color: red;"></div>
+            </form>
+            <p>Já possui uma conta? <a href="tela_login.html" class="criar-conta-login">Faça o login agora mesmo!</a>
+            </p>
         </div>
     </div>
     <footer>
         <p>&copy Copyright - 2023</p>
     </footer>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
