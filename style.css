@@ -248,6 +248,7 @@ footer {
     align-items: center;
     gap: 60px;
     height: 760px;
+    margin-top: 50px;
 }
 
 .text-login{
@@ -292,4 +293,31 @@ footer {
 
 .criar-conta-login{
     font-weight: 600;
+}
+
+/* Página usuário */
+
+nav {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img_usuario{
+    width: 50px;
+}
+
+.foto_nome_usuario{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.img_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

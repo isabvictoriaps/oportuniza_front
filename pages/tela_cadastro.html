@@ -36,8 +36,8 @@
             <img src="/assets/img_cadastro.png" alt="">
         </div>
         <div class="text-login">
-            <img src="/assets/Group 93.png" alt="">
-            <form class="input_login" id="registration-form">
+            <img src="/assets/Group 93.png" alt="" >
+            <form class="input_login" id="registration-form" enctype="multipart/form-data">
                 <input type="text" name="nome_completo" class="email-login" placeholder="Nome completo" required>
                 <input type="text" name="usuario" class="email-login" placeholder="Usuario" required>
                 <input type="email" name="email" class="email-login" placeholder="E-mail" required>
@@ -45,6 +45,8 @@
                 <input type="password" name="senha" class="email-login" placeholder="Senha" required>
                 <input type="password" name="confirm_senha" class="email-login" placeholder="Confirme sua senha"
                     required>
+                <label for="formFile" class="form-label">Selecione uma foto de perfil</label>
+                <input type="file" name="img_usuario" class="form-control" type="file" id="formFile" placeholder="Foto de perfil" required>
                 <button type="button" class="button-entrar-login" onclick="cadastrarUsuario()">CADASTRAR</button>
                 <div id="mensagem-de-erro-cadastro" style="color: red;"></div>
             </form>
